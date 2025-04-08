@@ -11,4 +11,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  namespace :api do
+    get 'users/:id/show_points_balance', to: 'users#show_points_balance'
+    get 'rewards', to: 'rewards#index'
+    post 'redemptions', to: 'redemptions#create'
+    get 'users/:id/redemptions', to: 'redemptions#history'
+  end
 end

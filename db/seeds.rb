@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+user = User.create!(name: "Denys", points_balance: 100)
+Reward.create!(title: "Coffee", cost: 30)
+Reward.create!(title: "T-Shirt", cost: 70)

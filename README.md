@@ -29,7 +29,7 @@ Authentication: Cookie-based session handling
 
 APIs: Custom APIs for fetching user points, rewards, and redemption history.
 
-Installation
+**Installation**
 Backend (Ruby on Rails API)
 
 Clone the repository:

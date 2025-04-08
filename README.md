@@ -48,8 +48,9 @@ Start the Rails server:
 rails server
 The API will be available at http://localhost:3000.
 
-Frontend (React)
-Install dependencies:
+Frontend (React) npm start 
+
+**Install dependencies:**
 
 cd client
 npm install

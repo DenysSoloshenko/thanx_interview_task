@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "rewards#index"
 
   namespace :api do
     get 'users/:id/show_points_balance', to: 'users#show_points_balance'

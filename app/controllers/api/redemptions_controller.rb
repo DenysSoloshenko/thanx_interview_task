@@ -3,14 +3,11 @@ class Api::RedemptionsController < ApplicationController
     user = User.find(params[:user_id])
     reward = Reward.find(params[:reward_id])
 
-    if user.points_balance >= reward.cost
-      user.points_balance -= reward.cost
-      user.save!
-      user.redemptions.create!(reward: reward)
-      render json: { success: true }
-    else
-      render json: { error: 'Not enough points' }, status: 400
-    end
+    RewardRedemptionService.new(user: user, reward: reward).call
+    render json: { success: true }
+
+  rescue => e
+    render json: { error: e.message }, status: :unprocessable_entity
   end
 
   def history

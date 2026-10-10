@@ -27,8 +27,8 @@ A simple web application for managing a reward system. Users can earn and redeem
 
 1. Clone the repository:
 
-   git clone https://github.com/yourusername/rewards-app.git
-   cd rewards-app
+   git clone https://github.com/DenysSoloshenko/thanx_interview_task.git
+   cd thanx_interview_task
  
 2. Install dependencies:
 
